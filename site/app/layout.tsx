@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 export const metadata: Metadata = {
   title: "Cyber Congress | AISG46",
   description:
-    "The cybersecurity society of Amity International School, Sector 46, Gurugram — awareness, training, incident response, and events.",
+    "The cybersecurity society of Amity International School, Sector 46, Gurugram",
 };
 
 export default function RootLayout({
