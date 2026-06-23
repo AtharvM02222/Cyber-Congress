@@ -71,3 +71,71 @@ body {
   opacity: 0.3;
   user-select: none;
 }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.team-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--foreground) 5%, var(--background));
+  border: 1px solid color-mix(in srgb, var(--foreground) 10%, transparent);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.team-card-img {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.team-card-socials {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  display: flex;
+  gap: 0.3rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.team-card:hover .team-card-socials {
+  opacity: 1;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 0.4rem;
+  backdrop-filter: blur(6px);
+  transition: background 0.15s;
+}
+
+.social-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.team-card-info {
+  padding: 0.75rem 1rem 1rem;
+}
+
+.team-card-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.team-card-role {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 0.15rem;
+}
