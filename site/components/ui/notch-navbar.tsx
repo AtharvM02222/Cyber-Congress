@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { Home, User, Calendar, Zap, CreditCard, Menu, X, Sun, Moon } from "lucide-react"
+import { Home, User, Calendar, Users, FileText, Menu, X, Sun, Moon } from "lucide-react"
 import { cn } from "@/lib/utils"
 import LogoIcon from '@/assets/logo/logo-icon'
 import { motion, AnimatePresence } from "framer-motion"
@@ -49,13 +49,13 @@ export function NotchNavbar({ className, ...props }: React.HTMLAttributes<HTMLEl
   // Navigation items configuration
   const items = {
     left: [
-      { label: "Home", href: "#home", icon: Home },
-      { label: "About", href: "#about", icon: User },
-      { label: "Events", href: "#events", icon: Calendar }
+      { label: "Home", href: "/", icon: Home },
+      { label: "About", href: "/about", icon: User },
+      { label: "Events", href: "/events", icon: Calendar }
     ],
     right: [
-      { label: "Sponsors", href: "#sponsors", icon: Zap },
-      { label: "Pricing", href: "#pricing", icon: CreditCard }
+      { label: "Team", href: "/team", icon: Users },
+      { label: "Report", href: "/report", icon: FileText }
     ]
   }
 
