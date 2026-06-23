@@ -124,7 +124,7 @@ export function NotchNavbar({ className, ...props }: React.HTMLAttributes<HTMLEl
               </div>
 
               {/* Desktop Right Nav */}
-              <nav className="hidden md:flex gap-6 items-center shrink-0">
+              <nav className="hidden md:flex gap-8 mb-1 shrink-0">
                 {items.right.map(item => (
                   <NavLink key={item.label} {...item} />
                 ))}
