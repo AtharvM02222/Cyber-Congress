@@ -128,22 +128,7 @@ export function NotchNavbar({ className, ...props }: React.HTMLAttributes<HTMLEl
                 {items.right.map(item => (
                   <NavLink key={item.label} {...item} />
                 ))}
-                
-                <div className="flex gap-4 pl-4 border-l border-foreground/10 shrink-0 items-center">
-                  <LocalThemeToggle />
-                  <Link href="/login" className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors whitespace-nowrap">
-                    Log in
-                  </Link>
-                  <Link href="/signup" className="px-3 py-1.5 text-sm font-medium text-background bg-foreground rounded-2xl hover:bg-foreground/90 transition-colors shadow-sm shadow-foreground/10 whitespace-nowrap">
-                    Sign up
-                  </Link>
-                </div>
               </nav>
-
-              {/* Mobile Right Actions */}
-              <div className="md:hidden flex items-center gap-2 mb-1">
-                <LocalThemeToggle />
-              </div>
 
              </div>
           </div>
@@ -194,23 +179,6 @@ export function NotchNavbar({ className, ...props }: React.HTMLAttributes<HTMLEl
                    <span className="font-medium text-foreground/90">{item.label}</span>
                  </Link>
                ))}
-               <div className="h-px bg-foreground/10 my-2" />
-               <div className="flex flex-col gap-2">
-                 <Link 
-                    href="/login" 
-                    className="flex items-center gap-3 p-3 rounded-lg hover:bg-foreground/5 transition-colors font-medium text-foreground/90"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                 >
-                   Log in
-                 </Link>
-                 <Link 
-                    href="/signup" 
-                    className="flex items-center justify-center gap-2 p-3 rounded-lg bg-foreground text-background font-medium mt-2"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                 >
-                   Sign up
-                 </Link>
-               </div>
              </nav>
 
           </motion.div>
