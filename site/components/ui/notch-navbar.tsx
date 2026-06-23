@@ -3,7 +3,6 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Home, User, Calendar, Zap, CreditCard, Menu, X, Sun, Moon } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { ThemeToggle } from "@/components/theme-toggle"
 import LogoIcon from '@/assets/logo/logo-icon'
 import { motion, AnimatePresence } from "framer-motion"
 import { useTheme } from "next-themes"
@@ -19,8 +18,8 @@ const NavLink = ({ href, icon: Icon, label }: { href: string; icon: React.Compon
   </Link>
 )
 
-// Simple Theme Toggle for Mobile
-const MobileThemeToggle = () => {
+// Simple Theme Toggle for Desktop and Mobile
+const LocalThemeToggle = () => {
   const { theme, setTheme, resolvedTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
@@ -131,7 +130,7 @@ export function NotchNavbar({ className, ...props }: React.HTMLAttributes<HTMLEl
                 ))}
                 
                 <div className="flex gap-4 pl-4 border-l border-foreground/10 shrink-0 items-center">
-                  <ThemeToggle />
+                  <LocalThemeToggle />
                   <Link href="/login" className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors whitespace-nowrap">
                     Log in
                   </Link>
@@ -143,7 +142,7 @@ export function NotchNavbar({ className, ...props }: React.HTMLAttributes<HTMLEl
 
               {/* Mobile Right Actions */}
               <div className="md:hidden flex items-center gap-2 mb-1">
-                <MobileThemeToggle />
+                <LocalThemeToggle />
               </div>
 
              </div>
