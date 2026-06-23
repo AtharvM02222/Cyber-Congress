@@ -8,8 +8,6 @@ export interface Socials {
 export interface TeamMember {
   name: string;
   role: string;
-  department: string;
-  skills: string[];
   image: string;
   socials: Socials;
 }
@@ -18,8 +16,6 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Bhavit Grover",
     role: "President",
-    department: "Pro-Core",
-    skills: ["~in progress~"],
     image: "/mainlogo.jpg",
     socials: {
       github: "https://github.com",
@@ -31,8 +27,6 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Aarav Juneja",
     role: "Vice President",
-    department: "Pro-Core",
-    skills: ["~in progress~"],
     image: "/mainlogo.jpg",
     socials: {
       github: "https://github.com",
@@ -44,8 +38,6 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Saksham Jain",
     role: "Secretary",
-    department: "Pro-Core",
-    skills: ["~in progress~"],
     image: "/mainlogo.jpg",
     socials: {
       github: "https://github.com",
@@ -57,8 +49,6 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Kushagra Sethia",
     role: "Secretary",
-    department: "Pro-Core",
-    skills: ["~in progress~"],
     image: "/mainlogo.jpg",
     socials: {
       github: "https://github.com",
@@ -70,8 +60,6 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Ahaana Dhamija",
     role: "Core Member",
-    department: "Core Members",
-    skills: ["~in progress~"],
     image: "/mainlogo.jpg",
     socials: {
       github: "https://github.com",
@@ -83,8 +71,6 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Aarna Sethi",
     role: "Core Member",
-    department: "Core Members",
-    skills: ["~in progress~"],
     image: "/mainlogo.jpg",
     socials: {
       github: "https://github.com",
@@ -96,8 +82,6 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Kanishk Jain",
     role: "Core Member",
-    department: "Core Members",
-    skills: ["~in progress~"],
     image: "/mainlogo.jpg",
     socials: {
       github: "https://github.com",
@@ -109,8 +93,6 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Parag Verma",
     role: "Core Member",
-    department: "Core Members",
-    skills: ["~in progress~"],
     image: "/mainlogo.jpg",
     socials: {
       github: "https://github.com",

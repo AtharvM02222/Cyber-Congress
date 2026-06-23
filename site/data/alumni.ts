@@ -6,10 +6,5 @@ export type AlumniMember = {
 };
 
 export const alumni: AlumniMember[] = [
-  {
-    id: "alumni-1",
-    name: "Placeholder Alumni",
-    role: "Former President",
-    year: 2024,
-  }
+
 ];
