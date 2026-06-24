@@ -140,44 +140,6 @@ body {
   margin-top: 0.15rem;
 }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.85rem 1.75rem;
-  border-radius: 0.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  font-size: 0.8rem;
-  border: 2px solid transparent;
-  transition: background-color 0.15s ease, color 0.15s ease;
-  white-space: nowrap;
-}
-
-.btn-primary {
-  background-color: var(--color-accent);
-  border-color: var(--color-accent);
-  color: white;
-}
-
-.btn-primary:hover {
-  background-color: transparent;
-  color: var(--color-accent);
-}
-
-.btn-outline {
-  background-color: transparent;
-  border-color: var(--foreground);
-  color: var(--foreground);
-}
-
-.btn-outline:hover {
-  background-color: var(--foreground);
-  color: var(--color-bg);
-}
-
 /* --- Reusable Page Layout Utilities --- */
 
 .page-container {
