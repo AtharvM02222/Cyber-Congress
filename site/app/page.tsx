@@ -1,6 +1,6 @@
 export default function HomePage() {
   return (
-    <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
+    <div className="page-container">
       <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
         CYBER_CONGRESS
       </h1>

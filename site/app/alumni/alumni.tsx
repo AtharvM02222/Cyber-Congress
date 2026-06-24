@@ -3,10 +3,10 @@ import { alumni } from "@/data/alumni";
 
 export default function Alumni() {
   return (
-    <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
-      <div className="flex justify-between items-end mb-8 border-b-2 border-[var(--color-border)] pb-4">
+    <div className="page-container">
+      <div className="page-header-container">
         <h1 className="page-title !mb-0 !text-left !w-auto">Alumni</h1>
-        <Link href="/team" className="text-xl md:text-2xl font-bold hover:text-[var(--color-accent)] transition-colors uppercase tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent)]">
+        <Link href="/team" className="nav-link-accent">
           Team
         </Link>
       </div>

@@ -37,7 +37,7 @@ export default function Events() {
 
         {/* Column 2 */}
         <div className="col-span-1 border-r border-[var(--color-border-dim)] p-8 flex flex-col z-10 hidden md:flex">
-          <h4 className="text-sm font-bold mb-4 uppercase tracking-widest text-[var(--color-accent)]">Description</h4>
+          <h4 className="event-label">Description</h4>
           <p className="text-lg leading-relaxed font-medium text-[var(--foreground)]">
             {event.description}
           </p>
@@ -45,7 +45,7 @@ export default function Events() {
 
         {/* Column 3 */}
         <div className="col-span-1 border-r border-[var(--color-border-dim)] p-8 flex flex-col z-10 hidden md:flex">
-          <h4 className="text-sm font-bold mb-4 uppercase tracking-widest text-[var(--color-accent)]">Theme</h4>
+          <h4 className="event-label">Theme</h4>
           <p className="text-lg leading-relaxed font-medium text-[var(--foreground)]">
             {event.theme ?? "TBA"}
           </p>
@@ -73,7 +73,7 @@ export default function Events() {
 
           <div className="mt-auto flex flex-col gap-10 relative z-10">
             <div className="text-lg">
-              <p className="font-bold mb-4 uppercase tracking-widest text-[var(--color-accent)] text-sm">Location</p>
+              <p className="event-label">Location</p>
               <p className="font-bold">{event.location ?? "TBA"}</p>
             </div>
           </div>
