@@ -1,8 +1,8 @@
 export interface Socials {
-  github: string;
-  linkedin: string;
-  email: string;
-  discord: string;
+  github?: string;
+  linkedin?: string;
+  email?: string;
+  discord?: string;
 }
 
 export interface TeamMember {
@@ -18,8 +18,8 @@ export const teamMembers: TeamMember[] = [
     role: "President",
     image: "/mainlogo.jpg",
     socials: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
+      github: "",
+      linkedin: "",
       email: "bhavit@gmail.com",
       discord: "thedoctor",
     },
@@ -29,8 +29,8 @@ export const teamMembers: TeamMember[] = [
     role: "Vice President",
     image: "/mainlogo.jpg",
     socials: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
+      github: "",
+      linkedin: "",
       email: "aarav@gmail.com",
       discord: "",
     },
@@ -40,8 +40,8 @@ export const teamMembers: TeamMember[] = [
     role: "Secretary",
     image: "/mainlogo.jpg",
     socials: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
+      github: "",
+      linkedin: "",
       email: "saksham@gmail.com",
       discord: "",
     },
@@ -51,8 +51,8 @@ export const teamMembers: TeamMember[] = [
     role: "Secretary",
     image: "/mainlogo.jpg",
     socials: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
+      github: "",
+      linkedin: "",
       email: "kushagra@gmail.com",
       discord: "",
     },
@@ -62,8 +62,8 @@ export const teamMembers: TeamMember[] = [
     role: "Core Member",
     image: "/mainlogo.jpg",
     socials: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
+      github: "",
+      linkedin: "",
       email: "ahaana@gmail.com",
       discord: "",
     },
@@ -73,8 +73,8 @@ export const teamMembers: TeamMember[] = [
     role: "Core Member",
     image: "/mainlogo.jpg",
     socials: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
+      github: "",
+      linkedin: "",
       email: "aarna@gmail.com",
       discord: "",
     },
@@ -84,8 +84,8 @@ export const teamMembers: TeamMember[] = [
     role: "Core Member",
     image: "/mainlogo.jpg",
     socials: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
+      github: "",
+      linkedin: "",
       email: "kanishk@gmail.com",
       discord: "",
     },
@@ -95,8 +95,8 @@ export const teamMembers: TeamMember[] = [
     role: "Core Member",
     image: "/mainlogo.jpg",
     socials: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
+      github: "",
+      linkedin: "",
       email: "parag@gmail.com",
       discord: "",
     },
