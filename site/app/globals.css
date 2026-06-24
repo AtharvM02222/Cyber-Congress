@@ -139,3 +139,21 @@ body {
   color: var(--color-text-muted);
   margin-top: 0.15rem;
 }
+
+/* --- Reusable Page Layout Utilities --- */
+
+.page-container {
+  @apply mx-auto max-w-5xl px-4 py-24 sm:px-6;
+}
+
+.page-header-container {
+  @apply flex justify-between items-end mb-8 border-b-2 border-[var(--color-border)] pb-4;
+}
+
+.nav-link-accent {
+  @apply text-xl md:text-2xl font-bold transition-colors uppercase tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent)];
+}
+
+.event-label {
+  @apply text-sm font-bold mb-4 uppercase tracking-widest text-[var(--color-accent)];
+}
