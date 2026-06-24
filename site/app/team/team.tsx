@@ -42,10 +42,10 @@ const LinkedinIcon = ({ size = 24, className }: { size?: number, className?: str
 
 export default function Team() {
   return (
-    <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
-      <div className="flex justify-between items-end mb-8 border-b-2 border-[var(--color-border)] pb-4">
+    <div className="page-container">
+      <div className="page-header-container">
         <h1 className="page-title !mb-0 !text-left !w-auto">Team</h1>
-        <Link href="/alumni" className="text-xl md:text-2xl font-bold hover:text-[var(--color-accent)] transition-colors uppercase tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent)]">
+        <Link href="/alumni" className="nav-link-accent">
           Alumni
         </Link>
       </div>
@@ -56,21 +56,21 @@ export default function Team() {
             <div className="team-card-img">
               <Image src={member.image} alt={member.name} fill className="object-cover" />
               <div className="team-card-socials">
-                {member.socials.linkedin && (
+                {member.socials.linkedin?.trim() ? (
                   <Link href={member.socials.linkedin} target="_blank" className="social-btn" aria-label="LinkedIn">
                     <LinkedinIcon size={14} />
                   </Link>
-                )}
-                {member.socials.github && (
+                ) : null}
+                {member.socials.github?.trim() ? (
                   <Link href={member.socials.github} target="_blank" className="social-btn" aria-label="GitHub">
                     <GithubIcon size={14} />
                   </Link>
-                )}
-                {member.socials.email && (
+                ) : null}
+                {member.socials.email?.trim() ? (
                   <Link href={`mailto:${member.socials.email}`} className="social-btn" aria-label="Email">
                     <Mail size={14} />
                   </Link>
-                )}
+                ) : null}
               </div>
             </div>
 
