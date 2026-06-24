@@ -21,7 +21,7 @@ export default function Events() {
         
         {/* Column 1 */}
         <div className="col-span-1 border-r border-[var(--color-border-dim)] p-8 flex flex-col relative min-h-[600px]">
-          <h2 className="text-2xl font-black tracking-widest mb-24 z-10">CYBER CON</h2>
+          <h2 className="text-xl md:text-2xl font-black tracking-widest mb-24 z-10 text-[var(--color-text-muted)]">UPCOMING EVENT</h2>
           
           <div className="absolute top-1/2 -translate-y-1/2 left-8 md:left-12 whitespace-nowrap z-20 pointer-events-none">
             <div className="relative inline-block">
@@ -51,15 +51,19 @@ export default function Events() {
         </div>
 
         {/* Column 2 */}
-        <div className="col-span-1 border-r border-[var(--color-border-dim)] p-8 flex flex-col gap-6 font-semibold z-10 hidden md:flex">
-          <a href="#" className="hover:text-[var(--color-accent)] transition-colors">Schedule</a>
-          <a href="#" className="hover:text-[var(--color-accent)] transition-colors">Program</a>
+        <div className="col-span-1 border-r border-[var(--color-border-dim)] p-8 flex flex-col z-10 hidden md:flex">
+          <h4 className="text-sm font-bold mb-4 uppercase tracking-widest text-[var(--color-accent)]">Description</h4>
+          <p className="text-lg leading-relaxed font-medium text-[var(--foreground)]">
+            Join us for our flagship annual symposium where top minds in cybersecurity converge. Participate in capture-the-flag competitions, attend expert-led workshops, and network with peers.
+          </p>
         </div>
 
         {/* Column 3 */}
-        <div className="col-span-1 border-r border-[var(--color-border-dim)] p-8 flex flex-col gap-6 font-semibold z-10 hidden md:flex">
-          <a href="#" className="hover:text-[var(--color-accent)] transition-colors">About</a>
-          <a href="#" className="hover:text-[var(--color-accent)] transition-colors">Speakers</a>
+        <div className="col-span-1 border-r border-[var(--color-border-dim)] p-8 flex flex-col z-10 hidden md:flex">
+          <h4 className="text-sm font-bold mb-4 uppercase tracking-widest text-[var(--color-accent)]">Theme</h4>
+          <p className="text-lg leading-relaxed font-medium text-[var(--foreground)]">
+            This year's event focuses on the intersection of AI and modern security protocols. Open to all students passionate about digital defense.
+          </p>
         </div>
 
         {/* Column 4 */}
@@ -72,8 +76,9 @@ export default function Events() {
           </svg>
 
           <div className="flex flex-col gap-6 font-semibold relative z-10 mb-24">
-            <a href="#" className="text-[var(--color-accent)] hover:opacity-80 transition-opacity">Tickets</a>
-            <a href="#" className="hover:text-[var(--color-accent)] transition-colors">Contacts</a>
+            <button className="text-left text-xl font-black uppercase tracking-widest text-[var(--color-accent)] hover:opacity-80 transition-opacity">
+              Register Now
+            </button>
           </div>
 
           <div className="mt-auto flex flex-col gap-10 relative z-10">
