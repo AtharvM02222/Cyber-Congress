@@ -43,7 +43,12 @@ const LinkedinIcon = ({ size = 24, className }: { size?: number, className?: str
 export default function Team() {
   return (
     <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
-      <h1 className="page-title" style={{ textAlign: "left" }}>Team</h1>
+      <div className="flex justify-between items-end mb-8 border-b-2 border-[var(--color-border)] pb-4">
+        <h1 className="page-title !mb-0 !text-left !w-auto">Team</h1>
+        <Link href="/alumni" className="text-xl md:text-2xl font-bold hover:text-[var(--color-accent)] transition-colors uppercase tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent)]">
+          Alumni
+        </Link>
+      </div>
       <div className="team-grid">
         {teamMembers.map((member) => (
           <div key={member.name} className="team-card">
