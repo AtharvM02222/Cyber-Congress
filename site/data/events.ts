@@ -1,6 +1,6 @@
 export type EventItem = {
   title: string;
-  date: string; // ISO format: YYYY-MM-DD
+  date: string;
   location?: string;
   description: string;
   theme?: string;
@@ -9,8 +9,8 @@ export type EventItem = {
 
 export const event: EventItem = {
   title: "Atharv Joined Cyber Congress",
-  date: "2026-06-01",
-  location: "School Campus",
+  date: "22nd Jun",
+  location: "Amity Internation School, Sector 46 Gurugram",
   description:
     "Atharv officially joined Cyber Congress and became an active member, contributing to cybersecurity initiatives and technical events.",
   theme: "Cybersecurity & Ethical Hacking",
