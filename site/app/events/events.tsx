@@ -76,10 +76,6 @@ export default function Events() {
               <p className="font-bold mb-4 uppercase tracking-widest text-[var(--color-accent)] text-sm">Location</p>
               <p className="font-bold">{event.location ?? "TBA"}</p>
             </div>
-
-            <p className="text-xl font-medium leading-relaxed max-w-sm mt-4">
-              Join our premier cybersecurity society. Adopting ethical hacking tactics & digital culture through curated events.
-            </p>
           </div>
         </div>
       </div>
