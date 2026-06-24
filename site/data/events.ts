@@ -12,7 +12,7 @@ export const event: EventItem = {
   date: "22nd Jun",
   location: "Amity Internation School, Sector 46 Gurugram",
   description:
-    "Atharv officially joined Cyber Congress and became an active member, contributing to cybersecurity initiatives and technical events.",
-  theme: "Cybersecurity & Ethical Hacking",
+    "Atharv WILL officially join Cyber Congress, Next year as manisha maam said",
+  theme: "thoda sa late hogya warna iss saal join karle ta",
   registerLink: "https://forms.gle/xxxx",
 };
