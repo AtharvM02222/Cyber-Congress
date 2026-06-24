@@ -29,6 +29,10 @@ body {
   font-style: normal;
 }
 
+/* =====================
+   Layout Utilities
+   ===================== */
+
 .page {
   display: flex;
   flex-direction: column;
@@ -46,6 +50,18 @@ body {
   max-width: 72rem;
 }
 
+.page-container {
+  margin-inline: auto;
+  max-width: 64rem;
+  padding: 6rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .page-container {
+    padding-inline: 1.5rem;
+  }
+}
+
 .page-title {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
@@ -54,6 +70,10 @@ body {
   width: 100%;
   margin-bottom: 2rem;
 }
+
+/* =====================
+   Panel / Prompt
+   ===================== */
 
 .panel {
   width: 100%;
@@ -71,6 +91,89 @@ body {
   opacity: 0.3;
   user-select: none;
 }
+
+/* =====================
+   Page Header (reusable)
+   ===================== */
+
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: 1rem;
+}
+
+.nav-link-accent {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  transition: color 0.2s;
+}
+
+.nav-link-accent:hover {
+  color: var(--color-accent);
+}
+
+/* =====================
+   Home Page
+   ===================== */
+
+.home-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  overflow: hidden;
+}
+
+.home-title-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.home-title {
+  width: 100%;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  font-size: clamp(2.5rem, 11vw, 10rem);
+  position: relative;
+  z-index: 10;
+}
+
+.home-title-underline {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: var(--color-accent);
+  z-index: -1;
+  bottom: -1rem;
+  height: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .home-title-underline {
+    bottom: -1.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-title-underline {
+    bottom: -2rem;
+    height: 4rem;
+  }
+}
+
+/* =====================
+   Team Grid & Cards
+   ===================== */
 
 .team-grid {
   display: grid;
@@ -140,20 +243,310 @@ body {
   margin-top: 0.15rem;
 }
 
-/* --- Reusable Page Layout Utilities --- */
+/* =====================
+   Alumni Grid & Cards
+   ===================== */
 
-.page-container {
-  @apply mx-auto max-w-5xl px-4 py-24 sm:px-6;
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
 }
 
-.page-header-container {
-  @apply flex justify-between items-end mb-8 border-b-2 border-[var(--color-border)] pb-4;
+@media (min-width: 768px) {
+  .alumni-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.nav-link-accent {
-  @apply text-xl md:text-2xl font-bold transition-colors uppercase tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent)];
+@media (min-width: 1024px) {
+  .alumni-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
+
+.alumni-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 160px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--foreground) 5%, var(--background));
+  border: 1px solid color-mix(in srgb, var(--foreground) 10%, transparent);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.alumni-card-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.alumni-card-role {
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.alumni-card-year-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 1rem;
+}
+
+.alumni-card-label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.alumni-card-year {
+  font-size: 1.875rem;
+  font-weight: 900;
+  color: var(--color-border-dim);
+}
+
+.alumni-empty {
+  text-align: center;
+  padding: 6rem 0;
+  color: var(--color-text-muted);
+}
+
+.alumni-empty-text {
+  font-size: 1.25rem;
+}
+
+/* =====================
+   Events Page
+   ===================== */
+
+.events-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+  overflow: hidden;
+}
+
+.events-grid {
+  min-height: calc(100vh - 4rem);
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  border-top: 1px solid var(--color-border-dim);
+  border-bottom: 1px solid var(--color-border-dim);
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .events-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.events-col {
+  border-right: 1px solid var(--color-border-dim);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+
+.events-col-date {
+  min-height: 600px;
+}
+
+.events-col-hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .events-col-hidden {
+    display: flex;
+  }
+}
+
+.events-col-last {
+  border-right: none;
+  background: var(--color-bg);
+}
+
+.events-section-label {
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  margin-bottom: 6rem;
+  z-index: 10;
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 768px) {
+  .events-section-label {
+    font-size: 1.5rem;
+  }
+}
+
+.events-date-display {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2rem;
+  white-space: nowrap;
+  z-index: 20;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .events-date-display {
+    left: 3rem;
+  }
+}
+
+.events-date-text {
+  font-size: 12vw;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--foreground);
+  mix-blend-mode: multiply;
+}
+
+@media (min-width: 768px) {
+  .events-date-text {
+    font-size: 8vw;
+  }
+}
+
+.events-date-ring {
+  position: absolute;
+  inset: -2rem;
+  width: calc(100% + 4rem);
+  height: calc(100% + 4rem);
+  color: var(--color-accent);
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .events-date-ring {
+    inset: -3rem;
+    width: calc(100% + 6rem);
+    height: calc(100% + 6rem);
+  }
+}
+
+.events-title-block {
+  margin-top: auto;
+  padding-top: 6rem;
+  position: relative;
+  z-index: 10;
+}
+
+.events-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  max-width: 250px;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .events-title {
+    font-size: 2.25rem;
+  }
+}
+
+.events-title-underline {
+  display: block;
+  width: 16rem;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  color: var(--color-accent);
+}
+
+.events-body-text {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+.events-register-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 6rem;
+}
+
+.events-register-link {
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  transition: opacity 0.15s;
+}
+
+.events-register-link:hover {
+  opacity: 0.8;
+}
+
+.events-register-closed {
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+}
+
+.events-location-block {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.events-location-value {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.events-deco-lines {
+  position: absolute;
+  top: -4rem;
+  right: -4rem;
+  width: 20rem;
+  height: 20rem;
+  color: var(--color-accent);
+  opacity: 0.9;
+  pointer-events: none;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .events-deco-lines {
+    display: block;
+  }
+}
+
+/* =====================
+   Shared Labels
+   ===================== */
 
 .event-label {
-  @apply text-sm font-bold mb-4 uppercase tracking-widest text-[var(--color-accent)];
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
 }
