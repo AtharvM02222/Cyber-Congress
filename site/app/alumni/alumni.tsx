@@ -1,7 +1,12 @@
 import { alumni } from "@/data/alumni";
 import { PageHeader } from "@/components/ui/page-header";
 import { AlumniCard } from "@/components/ui/alumni-card";
-import { CornerZigZag, CornerBurst, CornerCrosses, CornerWiggles } from "@/components/ui/page-doodles";
+import {
+  CornerZigZag,
+  CornerBurst,
+  CornerCrosses,
+  CornerWiggles,
+} from "@/components/ui/page-doodles";
 
 export default function Alumni() {
   return (
@@ -15,9 +20,7 @@ export default function Alumni() {
       </div>
 
       {alumni.length === 0 ? (
-        <div className="text-center py-24 text-foreground/60 text-xl">
-          Alumni records are currently being updated. Check back soon.
-        </div>
+        <div className="text-center py-24 text-foreground/60 text-xl">~~</div>
       ) : (
         <div className="card-grid">
           {alumni.map((member) => (

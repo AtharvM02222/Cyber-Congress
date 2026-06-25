@@ -87,7 +87,7 @@ export const teamMembers: TeamMember[] = [
       github: "",
       linkedin: "",
       email: "",
-      discord: "",
+      discord: "jkanishk98.4",
     },
   },
   {
