@@ -1,13 +1,13 @@
 import { alumni } from "@/data/alumni";
 import { PageHeader } from "@/components/ui/page-header";
 import { AlumniCard } from "@/components/ui/alumni-card";
-import { AlumniDoodle } from "@/components/ui/page-doodles";
+import { CornerZigZag } from "@/components/ui/page-doodles";
 
 export default function Alumni() {
   return (
     <div className="mx-auto max-w-5xl py-24 px-4 sm:px-6">
       <div className="relative inline-block w-full">
-        <AlumniDoodle className="alumni-deco" />
+        <CornerZigZag className="alumni-deco" />
         <PageHeader title="Alumni" actionText="Team" actionHref="/team" />
       </div>
 
