@@ -60,7 +60,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Ahaana Dhamija",
     role: "Core Member",
-    image: "/mainlogo.jpg",
+    image: "/Ahaana_Dhamija.webp",
     socials: {
       github: "",
       linkedin: "",
@@ -71,7 +71,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Aarna Sethi",
     role: "Core Member",
-    image: "/mainlogo.jpg",
+    image: "/Aarna_Sethi.webp",
     socials: {
       github: "",
       linkedin: "",
