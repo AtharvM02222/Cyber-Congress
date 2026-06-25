@@ -1,7 +1,12 @@
 import { teamMembers } from "@/data/team";
 import { PageHeader } from "@/components/ui/page-header";
 import { TeamCard } from "@/components/ui/team-card";
-import { CornerDots, CornerSquiggles, CornerCrosses, CornerWiggles } from "@/components/ui/page-doodles";
+import {
+  CornerDots,
+  CornerSquiggles,
+  CornerCrosses,
+  CornerWiggles,
+} from "@/components/ui/page-doodles";
 
 export default function Team() {
   return (
@@ -15,7 +20,7 @@ export default function Team() {
       </div>
       <div className="card-grid">
         {teamMembers.map((member) => (
-          <TeamCard key={member.id} {...member} />
+          <TeamCard key={member.name} {...member} />
         ))}
       </div>
     </div>
