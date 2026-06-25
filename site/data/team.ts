@@ -98,7 +98,7 @@ export const teamMembers: TeamMember[] = [
       github: "",
       linkedin: "",
       email: "",
-      discord: "",
+      discord: "https://github.com/paragverma15",
     },
   },
 ];
