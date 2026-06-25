@@ -1,7 +1,7 @@
 interface AlumniCardProps {
   name: string;
   role: string;
-  year: string;
+  year: string | number;
 }
 
 export function AlumniCard({ name, role, year }: AlumniCardProps) {
