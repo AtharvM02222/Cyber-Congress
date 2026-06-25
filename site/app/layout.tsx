@@ -7,14 +7,6 @@ export const metadata: Metadata = {
   title: "Cyber Congress | AISG46",
   description:
     "The cybersecurity society of Amity International School, Sector 46, Gurugram",
-  icons: {
-    icon: [
-      {
-        url: "/favicon.ico",
-        type: "image/x-icon",
-      },
-    ],
-  },
 };
 
 export default function RootLayout({
@@ -24,13 +16,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full" suppressHydrationWarning>
-      <head>
-        <style>{`
-          link[rel="icon"] {
-            border-radius: 50%;
-          }
-        `}</style>
-      </head>
       <body className="flex min-h-full flex-col antialiased">
         <ThemeProvider
           attribute="class"
