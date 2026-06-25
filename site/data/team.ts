@@ -28,10 +28,11 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Aarav Juneja",
     role: "Vice President",
-    image: "/mainlogo.jpg",
+    image:
+      "https://www.dropbox.com/scl/fi/tbal1glew6mlz03jcdui4/phatgya.jpg?rlkey=phtixpcy8yhds9t88fo0vajbm",
     socials: {
-      github: "",
-      linkedin: "",
+      github: "https://github.com/AaravJuneja",
+      linkedin: "https://www.linkedin.com/in/aaravjuneja",
       email: "",
       discord: "",
     },
