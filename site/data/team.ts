@@ -20,7 +20,7 @@ export const teamMembers: TeamMember[] = [
     socials: {
       github: "https://github.com/bhavitgrover",
       linkedin: "https://www.linkedin.com/in/bhavit-grover/",
-      email: "",
+      email: "groverbhavit@gmail.com",
       discord: "",
     },
   },
@@ -31,7 +31,7 @@ export const teamMembers: TeamMember[] = [
     socials: {
       github: "https://github.com/AaravJuneja",
       linkedin: "https://www.linkedin.com/in/aaravjuneja",
-      email: "",
+      email: "aarav.juneja2044@gmail.com",
       discord: "",
     },
   },
@@ -64,7 +64,7 @@ export const teamMembers: TeamMember[] = [
     socials: {
       github: "",
       linkedin: "",
-      email: "",
+      email: "ahaana.dhamija17@gmail.com",
       discord: "",
     },
   },
@@ -75,7 +75,7 @@ export const teamMembers: TeamMember[] = [
     socials: {
       github: "",
       linkedin: "",
-      email: "",
+      email: "sethiaarna04@gmail.com",
       discord: "",
     },
   },
@@ -86,7 +86,7 @@ export const teamMembers: TeamMember[] = [
     socials: {
       github: "",
       linkedin: "",
-      email: "",
+      email: "jkanishk239@gmail.com",
       discord: "",
     },
   },
