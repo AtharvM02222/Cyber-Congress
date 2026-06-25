@@ -5,9 +5,9 @@ import { CornerSquiggles, CornerDots, CornerCrosses } from "@/components/ui/page
 export default function Events() {
   return (
     <div className="w-full flex flex-col bg-background overflow-hidden relative">
-      <CornerSquiggles className="absolute top-1/4 left-0 w-64 h-64 text-[#5a7a5a] -z-10 opacity-20 hidden md:block rotate-90 pointer-events-none" />
-      <CornerDots className="absolute top-3/4 right-0 w-56 h-56 text-[#5a7a5a] -z-10 opacity-30 hidden md:block pointer-events-none" />
-      <CornerCrosses className="absolute bottom-1/4 left-12 w-40 h-40 text-[#5a7a5a] -z-10 opacity-20 hidden md:block pointer-events-none" />
+      <CornerSquiggles className="doodle-events-cl" />
+      <CornerDots className="doodle-events-br" />
+      <CornerCrosses className="doodle-events-bl" />
       
       <div className="min-h-[calc(100vh-4rem)] grid grid-cols-1 md:grid-cols-4 w-full border-y border-foreground/20 relative">
 
