@@ -93,12 +93,12 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Parag Verma",
     role: "Core Member",
-    image: "/mainlogo.jpg",
+    image: "/Parag_Verma.webp",
     socials: {
-      github: "",
+      github: "https://github.com/paragverma15",
       linkedin: "",
       email: "",
-      discord: "https://github.com/paragverma15",
+      discord: "",
     },
   },
 ];
