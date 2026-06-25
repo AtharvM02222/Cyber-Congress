@@ -1,28 +1,20 @@
 import { alumni } from "@/data/alumni";
 import { PageHeader } from "@/components/ui/page-header";
+import { AlumniCard } from "@/components/ui/alumni-card";
 
 export default function Alumni() {
   return (
-    <div className="page-container">
+    <div className="mx-auto max-w-5xl py-24 px-4 sm:px-6">
       <PageHeader title="Alumni" actionText="Team" actionHref="/team" />
 
       {alumni.length === 0 ? (
-        <div className="alumni-empty">
-          <p className="alumni-empty-text">Alumni details coming soon...</p>
+        <div className="text-center py-24 text-foreground/60 text-xl">
+          <p>Alumni details coming soon...</p>
         </div>
       ) : (
-        <div className="alumni-grid">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {alumni.map((member) => (
-            <div key={member.id} className="alumni-card">
-              <div>
-                <h3 className="alumni-card-name">{member.name}</h3>
-                <p className="alumni-card-role">{member.role}</p>
-              </div>
-              <div className="alumni-card-year-row">
-                <span className="alumni-card-label">Class of</span>
-                <span className="alumni-card-year">{member.year}</span>
-              </div>
-            </div>
+            <AlumniCard key={member.id} {...member} />
           ))}
         </div>
       )}
