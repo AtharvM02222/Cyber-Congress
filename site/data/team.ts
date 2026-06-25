@@ -82,7 +82,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Kanishk Jain",
     role: "Core Member",
-    image: "/mainlogo.jpg",
+    image: "/Kanishk_Jain.webp",
     socials: {
       github: "",
       linkedin: "",
