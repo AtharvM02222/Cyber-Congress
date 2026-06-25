@@ -16,10 +16,11 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Bhavit Grover",
     role: "President",
-    image: "/mainlogo.jpg",
+    image:
+      "https://www.techsyndicate.us/_next/image?url=%2Fpics%2Fbhavit_grover.webp&w=3840&q=75",
     socials: {
-      github: "",
-      linkedin: "",
+      github: "https://github.com/bhavitgrover",
+      linkedin: "https://www.linkedin.com/in/bhavit-grover/",
       email: "",
       discord: "",
     },
