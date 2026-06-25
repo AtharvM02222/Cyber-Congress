@@ -16,8 +16,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Bhavit Grover",
     role: "President",
-    image:
-      "https://www.techsyndicate.us/_next/image?url=%2Fpics%2Fbhavit_grover.webp&w=3840&q=75",
+    image: "/bhavit_grover.webp",
     socials: {
       github: "https://github.com/bhavitgrover",
       linkedin: "https://www.linkedin.com/in/bhavit-grover/",
@@ -28,8 +27,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Aarav Juneja",
     role: "Vice President",
-    image:
-      "https://www.dropbox.com/scl/fi/tbal1glew6mlz03jcdui4/phatgya.jpg?rlkey=phtixpcy8yhds9t88fo0vajbm",
+    image: "/aarav_juneja.webp",
     socials: {
       github: "https://github.com/AaravJuneja",
       linkedin: "https://www.linkedin.com/in/aaravjuneja",
