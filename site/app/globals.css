@@ -71,7 +71,7 @@ body {
         @apply rounded-2xl overflow-hidden bg-foreground/5 border border-foreground/10 shadow-[0_2px_8px_rgba(0,0,0,0.06)] h-full;
     }
     .card-image-wrap {
-        @apply relative aspect-[3/4] overflow-hidden;
+        @apply relative aspect-square overflow-hidden;
     }
     .card-image {
         @apply object-cover;

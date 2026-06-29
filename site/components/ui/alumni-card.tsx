@@ -12,9 +12,11 @@ export function AlumniCard({ name, role, year }: AlumniCardProps) {
           {name.charAt(0)}
         </div>
       </div>
-      <h3 className="card-title">{name}</h3>
-      <p className="card-subtitle">{role}</p>
-      <span className="card-tag">Class of {year}</span>
+      <div className="card-content">
+        <p className="card-title">{name}</p>
+        <p className="card-subtitle">{role}</p>
+        <span className="card-tag">Class of {year}</span>
+      </div>
     </div>
   );
 }
